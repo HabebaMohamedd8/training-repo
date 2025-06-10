@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="habeba_module.list">
+      <field name="name">HabebaModule list</field>
+      <field name="model">habeba_module.habeba_module</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="habeba_module.action_window">
+      <field name="name">HabebaModule window</field>
+      <field name="res_model">habeba_module.habeba_module</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="habeba_module.action_server">
+      <field name="name">HabebaModule server</field>
+      <field name="model_id" ref="model_habeba_module_habeba_module"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="HabebaModule" id="habeba_module.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="habeba_module.menu_1" parent="habeba_module.menu_root"/>
+    <menuitem name="Menu 2" id="habeba_module.menu_2" parent="habeba_module.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="habeba_module.menu_1_list" parent="habeba_module.menu_1"
+              action="habeba_module.action_window"/>
+    <menuitem name="Server to list" id="habeba_module" parent="habeba_module.menu_2"
+              action="habeba_module.action_server"/>
+-->
+  </data>
+</odoo>
