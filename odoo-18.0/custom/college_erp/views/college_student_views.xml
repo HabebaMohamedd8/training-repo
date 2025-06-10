@@ -8,16 +8,20 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="admission_no"/>
-                        <field name="admission_date"/>
-                        <field name="first_name"/>
-                        <field name="last_name"/>
-                        <field name="father_name"/>
-                        <field name="mother_name"/>
-                        <field name="communication_address"/>
-                        <field name="street"/>
-                        <field name="email"/>
-                        <field name="phone"/>
+                        <group>
+                            <field name="admission_no"/>
+                            <field name="admission_date"/>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="father_name"/>
+                        </group>
+                        <group>
+                            <field name="mother_name"/>
+                            <field name="communication_address"/>
+                            <field name="street"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                        </group>
                     </group>
                 </sheet>
             </form>
